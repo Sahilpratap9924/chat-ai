@@ -2,6 +2,7 @@ services:
   - type: web
     name: chat-ai-backend
     runtime: python
+    rootDir: Backend
     pythonVersion: "3.11"
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
