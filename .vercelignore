@@ -1,0 +1,15 @@
+# Ignore local and generated files for Vercel deployments
+
+.venv/
+venv/
+**pycache**/
+_.pyc
+_.pyo
+\*.log
+.env
+node_modules/
+frontend/node_modules/
+Backend/node_modules/
+.DS_Store
+.idea/
+.git/

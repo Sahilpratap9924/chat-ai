@@ -1,0 +1,8 @@
+# Ignore frontend and node-specific files when deploying the backend to Vercel
+
+frontend/
+node_modules/
+package-lock.json
+package.json
+.env
+\*.log

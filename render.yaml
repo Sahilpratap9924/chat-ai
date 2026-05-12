@@ -1,0 +1,27 @@
+services:
+  # Backend: Flask API
+  - type: web
+    name: chat-ai-backend
+    runtime: python
+    rootDir: Backend
+    pythonVersion: "3.11"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false   # You'll set this manually in Render dashboard
+
+  # Frontend: React Static Site
+  - type: web
+    name: chat-ai-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_URL
+        sync: false   # Set to your backend URL after backend is deployed
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
