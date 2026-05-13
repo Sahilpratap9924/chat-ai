@@ -22,7 +22,7 @@ A full-stack chatbot application built with **React**, **Tailwind CSS**, and **J
 - **Frontend**: React, JavaScript, HTML, Tailwind CSS
 - **Backend**: Python (FastAPI or Flask)
 - **API**: OpenAI / Gemini / Hugging Face (customizable)
-- **Deployment**: Vercel (frontend), Render or Railway (backend)
+- **Deployment**: Vercel (frontend), Render (backend)
 
 ---
 
