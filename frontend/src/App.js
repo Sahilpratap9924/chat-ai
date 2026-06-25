@@ -79,9 +79,7 @@ function App() {
       : "DEFAULT";
   });
   const [showPersonalityDropdown, setShowPersonalityDropdown] = useState(false);
-
-  // --- YOUR NAME HERE ---
-  const creatorName = "Mark Dennis V. Manangan"; // <--- Your full name
+  const creatorName = "Sahil Pratap Singh";
 
   const chatBoxRef = useRef(null);
   const abortControllerRef = useRef(null);
