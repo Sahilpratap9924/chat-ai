@@ -305,18 +305,18 @@ function App() {
 
         // --- NEW LOGIC FOR CREATOR NAME MENTION (REQUIRING CONTEXT) ---
         const markIdentityQuestions = [
-          "who is mark",
-          "is mark your creator",
-          "did mark create you",
-          "tell me about mark",
-          "who is manangan",
-          "is manangan your developer",
-          "who developed you mark",
-          "who designed you mark",
-          "mark developer",
-          "mark creator",
-          "who is mark dennis manangan",
-          "about mark dennis v. manangan",
+          "who is sahil",
+          "is sahil your creator",
+          "did sahil create you",
+          "tell me about sahil",
+          "who is sahil pratap",
+          "is sahil pratap your developer",
+          "who developed you sahil",
+          "who designed you sahil",
+          "sahil developer",
+          "sahil creator",
+          "who is sahil pratap singh",
+          "about sahil pratap singh",
         ].map((phrase) => phrase.toLowerCase());
 
         const isMarkIdentityQuestion = markIdentityQuestions.some((phrase) =>
